@@ -9,12 +9,14 @@
 import Foundation
 import HHModule
 
+// swiftlint:disable identifier_name
 enum ModulesUserStory: ARCHModuleID {
 #if HHModule
     case main(EmptyModuleIO)
 #else
     case main
 #endif
+// swiftlint:enable identifier_name
 
     var configurator: ARCHModuleConfigurator {
         switch self {

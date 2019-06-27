@@ -42,7 +42,7 @@ public class ARCHRouterWindowOptions: ARCHRouterOptions {
 private class TransitionWindow: UIWindow, CAAnimationDelegate {
 
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        print("\(animationDidStop)")
+        print("\(String(describing: animationDidStop))")
 
         DispatchQueue.main.async { [weak self] in
             self?.removeFromSuperview()

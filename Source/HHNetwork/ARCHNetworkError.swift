@@ -40,7 +40,7 @@ public struct ARCHNetworkError: Swift.Error, Codable {
     }
 
     public var debugDescription: String {
-        return "status:\(status) | code:\(code) | name:\(name) | message:\(message) | time:\(time)"
+        return "status:\(status) | code:\(code) | name:\(name) | message:\(message) | time:\(String(describing: time))"
     }
 
     public var errorDescription: String {

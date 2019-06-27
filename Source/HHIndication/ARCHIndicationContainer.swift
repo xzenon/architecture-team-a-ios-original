@@ -15,7 +15,7 @@ public protocol ARCHIndicationContainer: class {
 
 public extension ARCHIndicationContainer where Self: UIViewController {
 
-    public var layoutIndicationGuide: ARCHIndicationLayoutGuide {
+    var layoutIndicationGuide: ARCHIndicationLayoutGuide {
         let guideId = ARCHIndicationLayoutGuide.layoutGuideId
 
         let layoutGuide = contextView.layoutGuides.first(where: { $0.identifier == guideId })
@@ -27,7 +27,7 @@ public extension ARCHIndicationContainer where Self: UIViewController {
         }
     }
 
-    public var contextView: UIView {
+    var contextView: UIView {
         return view
     }
 }

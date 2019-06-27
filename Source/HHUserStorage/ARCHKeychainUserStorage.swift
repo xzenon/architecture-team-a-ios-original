@@ -80,12 +80,12 @@ open class ARCHKeychainUserStorage<U: ARCHUser, T: ARCHToken>: ARCHUserStorage<U
     private func read<T: Codable>(key: Keys) -> T? {
         debugLog?("[ARCHKeychainUserStorage] read value for key \(key.rawValue)")
 
-        guard let data = try? keychain.getData(key.rawValue), let valueData = data else {
+        guard let data = try? keychain.getData(key.rawValue) else {
             debugLog?("[ARCHKeychainUserStorage] not found value in keychain")
             return nil
         }
 
-        guard let value = try? JSONDecoder().decode([T].self, from: valueData) else {
+        guard let value = try? JSONDecoder().decode([T].self, from: data) else {
             debugLog?("[ARCHKeychainUserStorage] fail decode value")
             return nil
         }

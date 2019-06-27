@@ -127,7 +127,7 @@ open class ARCHMoyaProvider<T: ARCHTargetType>: MoyaProvider<T>, ARCHUserStorage
         objc_sync_enter(self)
         debugLog?("[ARCHMoyaProvider] remove request")
         let requestDescribing = String(describing: request)
-        if let index = requests.index(where: { String(describing: $0) == requestDescribing }) {
+        if let index = requests.firstIndex(where: { String(describing: $0) == requestDescribing }) {
             requests.remove(at: index)
         }
         objc_sync_exit(self)
