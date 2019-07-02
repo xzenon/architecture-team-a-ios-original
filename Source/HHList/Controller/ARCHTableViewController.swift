@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import DeepDiff
 
-open class ARCHTableViewController<D: Hashable, VM: ARCHCellViewModel & ARCHModelInitilizable, C: UITableViewCell & ARCHCell>: NSObject {
+open class ARCHTableViewController<D: DiffAware, VM: ARCHCellViewModel & ARCHModelInitilizable, C: UITableViewCell & ARCHCell>: NSObject {
 
     public let viewDataSource: ARCHTableViewDataSource
     public let dataAdapter: ARCHEmptyListDataAdapter<D, VM>

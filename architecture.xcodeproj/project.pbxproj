@@ -318,6 +318,7 @@
 		50EA303D2134529A00A95512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5093688420F683030044CA62 /* LaunchScreen.storyboard */; };
 		50EA303F2134529A00A95512 /* HHModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DD95211D84B800E08A92 /* HHModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50EA30402134529A00A95512 /* HHList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 501AA648211C6C4A002D3264 /* HHList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7458E00622CBB0EC00BDB2E2 /* DiffAware+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7458E00522CBB0EC00BDB2E2 /* DiffAware+.swift */; };
 		9C14180B2146B6EC009F1073 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14180A2146B6EC009F1073 /* ParentView.swift */; };
 		9CF48AFA2167A3F70040AE49 /* HHLens.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF48AEA2167A3F60040AE49 /* HHLens.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CF48B322167A4650040AE49 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B082167A4520040AE49 /* Operators.swift */; };
@@ -955,6 +956,7 @@
 		50FA81F3211AE47C00ADA769 /* ListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConfigurator.swift; sourceTree = "<group>"; };
 		50FA81F4211AE47C00ADA769 /* ListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListState.swift; sourceTree = "<group>"; };
 		50FA8208211C630900ADA769 /* ARCHCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHCellViewModel.swift; sourceTree = "<group>"; };
+		7458E00522CBB0EC00BDB2E2 /* DiffAware+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiffAware+.swift"; sourceTree = "<group>"; };
 		9C1417EF2146B23B009F1073 /* ParentModuleEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModuleEventHandler.swift; sourceTree = "<group>"; };
 		9C1417F02146B23B009F1073 /* ParentModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModuleProtocols.swift; sourceTree = "<group>"; };
 		9C1417F12146B23C009F1073 /* ParentModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModuleViewController.swift; sourceTree = "<group>"; };
@@ -1375,6 +1377,7 @@
 				503FD71D2140201C008905ED /* ARCHCollectionViewController+.swift */,
 				503FD71A21401724008905ED /* ARCHDiffTableViewController.swift */,
 				5072DDCC211DE05500E08A92 /* ARCHDiffCollectionViewController.swift */,
+				7458E00522CBB0EC00BDB2E2 /* DiffAware+.swift */,
 			);
 			path = HHListExtension;
 			sourceTree = "<group>";
@@ -2060,6 +2063,7 @@
 				508F842921396D1D00137D66 /* Swiftlint */,
 				5067976821256CF80034CDA2 /* Resources */,
 				5067979021256FAD0034CDA2 /* Embed Frameworks */,
+				7458E00422CBAF8800BDB2E2 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -2655,7 +2659,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		507ABCC221257C64003DBDD7 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2723,7 +2727,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    if which swiftlint >/dev/null; then\n        swiftlint\n    fi\nfi";
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    if which swiftlint >/dev/null; then\n        swiftlint\n    fi\nfi\n";
 		};
 		508F842A21396D4D00137D66 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2834,6 +2838,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    if which swiftlint >/dev/null; then\n        swiftlint\n    fi\nfi";
+		};
+		7458E00422CBAF8800BDB2E2 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/DeepDiff.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DeepDiff.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -3053,6 +3077,7 @@
 				50EA3021213420B600A95512 /* EmptyModuleViewController.swift in Sources */,
 				9CF7224A2147BB0500DE0915 /* ChildView.swift in Sources */,
 				5089236720FC8E7B0032985E /* ModulesUserStory.swift in Sources */,
+				7458E00622CBB0EC00BDB2E2 /* DiffAware+.swift in Sources */,
 				50EA3023213420B600A95512 /* EmptyModuleModuleIO.swift in Sources */,
 				50EA3026213421E800A95512 /* Label.swift in Sources */,
 				50EA3024213420B600A95512 /* EmptyModuleState.swift in Sources */,
@@ -3414,6 +3439,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HHList/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -3444,6 +3473,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HHList/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
