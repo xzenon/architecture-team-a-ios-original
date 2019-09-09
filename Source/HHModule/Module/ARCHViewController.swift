@@ -48,7 +48,7 @@ open class ARCHViewController<State: ARCHState, ViewOutput: ACRHViewOutput>: UIV
     open func render(state: ViewState) {
         debugLog?("begin render state")
 
-        var views = autorenderViews
+        let views = autorenderViews
         debugLog?("Autorender views:")
         views.forEach({ debugLog?("\(type(of: $0))") })
 
