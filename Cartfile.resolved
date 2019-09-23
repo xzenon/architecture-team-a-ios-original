@@ -1,5 +1,5 @@
 github "Alamofire/Alamofire" "5.0.0-rc.2"
-github "Moya/Moya" "14.0.0-beta.2"
+github "Moya/Moya" "b054ccbb6f1388701528e69f6a8534fa837f2397"
 github "ReactiveCocoa/ReactiveSwift" "6.1.0"
 github "ReactiveX/RxSwift" "5.0.1"
 github "gonzalonunez/Skeleton" "0.3.1"
