@@ -31,7 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func launchOn(window: UIWindow?) {
-        ModulesUserStory.main.displayOn(window: window, animated: false)
+//        ModulesUserStory.mainModule.displayOn(window: window, animated: false)
+        DemoUserStory.main.displayOn(window: window, animated: false)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
