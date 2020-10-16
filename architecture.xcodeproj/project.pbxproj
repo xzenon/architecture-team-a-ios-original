@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5016B4E321833342000D66B5 /* ARCHRouterWindowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016B4E221833342000D66B5 /* ARCHRouterWindowOptions.swift */; };
+		5016B4E5218336E4000D66B5 /* ARCHWindowTransitionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016B4E4218336E4000D66B5 /* ARCHWindowTransitionOptions.swift */; };
 		501AA64C211C6C4B002D3264 /* HHList.h in Headers */ = {isa = PBXBuildFile; fileRef = 501AA64A211C6C4B002D3264 /* HHList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		501AA656211C6C7E002D3264 /* ARCHTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089233120FC8DA30032985E /* ARCHTableViewDataSource.swift */; };
 		501AA657211C6C83002D3264 /* ARCHCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089233320FC8DA30032985E /* ARCHCollectionViewDataSource.swift */; };
@@ -15,6 +17,38 @@
 		501AA65A211C6C8B002D3264 /* ARCHListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089233620FC8DA30032985E /* ARCHListDataSource.swift */; };
 		501AA65B211C6C8E002D3264 /* ARCHCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA8208211C630900ADA769 /* ARCHCellViewModel.swift */; };
 		501AA65C211C6C9A002D3264 /* ARCHEmptyListDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA81EB211ACF8D00ADA769 /* ARCHEmptyListDataAdapter.swift */; };
+		5027156A2188A3E200DF483E /* ARCHSectionListDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502715682188A3CA00DF483E /* ARCHSectionListDataAdapter.swift */; };
+		5027156C2188A99400DF483E /* ARCHSectionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5027156B2188A99400DF483E /* ARCHSectionCollectionViewController.swift */; };
+		502A7B58217387F900C6A2E8 /* ARCHListDataSourceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B56217387EC00C6A2E8 /* ARCHListDataSourceAdapter.swift */; };
+		502A7B5D2173894C00C6A2E8 /* ARCHHeaderFooterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B5B2173893700C6A2E8 /* ARCHHeaderFooterViewModel.swift */; };
+		502A7B5E217389FA00C6A2E8 /* ARCHSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B592173883000C6A2E8 /* ARCHSectionViewModel.swift */; };
+		502A7B6021738C5D00C6A2E8 /* ARCHSectionDataSourceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B5F21738C5D00C6A2E8 /* ARCHSectionDataSourceAdapter.swift */; };
+		502A7B6221739BB800C6A2E8 /* ARCHHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B6121739BB800C6A2E8 /* ARCHHeaderFooterView.swift */; };
+		502A7B6921739CD100C6A2E8 /* ListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA81F4211AE47C00ADA769 /* ListState.swift */; };
+		502A7B6A21739CD100C6A2E8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA81F2211AE47C00ADA769 /* ListViewController.swift */; };
+		502A7B6B21739CD100C6A2E8 /* ModulesUserStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089235E20FC8E7B0032985E /* ModulesUserStory.swift */; };
+		502A7B6C21739CD100C6A2E8 /* ExampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50679794212572610034CDA2 /* ExampleCell.swift */; };
+		502A7B6D21739CD100C6A2E8 /* SimpleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506797A1212572AE0034CDA2 /* SimpleEntity.swift */; };
+		502A7B6E21739CD100C6A2E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093687B20F683010044CA62 /* AppDelegate.swift */; };
+		502A7B6F21739CD100C6A2E8 /* ListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA81F1211AE47C00ADA769 /* ListEventHandler.swift */; };
+		502A7B7021739CD100C6A2E8 /* ExampleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50679793212572610034CDA2 /* ExampleCellViewModel.swift */; };
+		502A7B7121739CD100C6A2E8 /* ListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA81F3211AE47C00ADA769 /* ListConfigurator.swift */; };
+		502A7B7221739CD100C6A2E8 /* ListModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA81F0211AE47C00ADA769 /* ListModuleIO.swift */; };
+		502A7B7421739CD100C6A2E8 /* HHModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DD95211D84B800E08A92 /* HHModule.framework */; };
+		502A7B7521739CD100C6A2E8 /* HHList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501AA648211C6C4A002D3264 /* HHList.framework */; };
+		502A7B7821739CD100C6A2E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5093688220F683030044CA62 /* Assets.xcassets */; };
+		502A7B7921739CD100C6A2E8 /* ExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50679795212572610034CDA2 /* ExampleCell.xib */; };
+		502A7B7A21739CD100C6A2E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5093688420F683030044CA62 /* LaunchScreen.storyboard */; };
+		502A7B7C21739CD100C6A2E8 /* HHModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DD95211D84B800E08A92 /* HHModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		502A7B7D21739CD100C6A2E8 /* HHList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 501AA648211C6C4A002D3264 /* HHList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		502A7B8921739D6200C6A2E8 /* SectionListModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B8421739D6200C6A2E8 /* SectionListModuleIO.swift */; };
+		502A7B8B21739D6200C6A2E8 /* SectionListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B8521739D6200C6A2E8 /* SectionListEventHandler.swift */; };
+		502A7B8D21739D6200C6A2E8 /* SectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B8621739D6200C6A2E8 /* SectionListViewController.swift */; };
+		502A7B8F21739D6200C6A2E8 /* SectionListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B8721739D6200C6A2E8 /* SectionListConfigurator.swift */; };
+		502A7B9121739D6200C6A2E8 /* SectionListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B8821739D6200C6A2E8 /* SectionListState.swift */; };
+		502A7B9F2173AA6900C6A2E8 /* Example2CVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B9C2173AA6900C6A2E8 /* Example2CVCell.swift */; };
+		502A7BA12173AA6900C6A2E8 /* Example2CVCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502A7B9D2173AA6900C6A2E8 /* Example2CVCellViewModel.swift */; };
+		502A7BA32173AA6900C6A2E8 /* Example2CVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 502A7B9E2173AA6900C6A2E8 /* Example2CVCell.xib */; };
 		503B4266216A608200CD641D /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B4265216A608200CD641D /* UILabel.swift */; };
 		503FD70E213EA920008905ED /* ARCHIndicationLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503FD70C213EA914008905ED /* ARCHIndicationLayoutGuide.swift */; };
 		503FD713213FF4E2008905ED /* IndicationViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503FD712213FF4E2008905ED /* IndicationViewProvider.swift */; };
@@ -163,6 +197,9 @@
 		5093687C20F683010044CA62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5093687B20F683010044CA62 /* AppDelegate.swift */; };
 		5093688320F683030044CA62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5093688220F683030044CA62 /* Assets.xcassets */; };
 		5093688620F683030044CA62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5093688420F683030044CA62 /* LaunchScreen.storyboard */; };
+		50954D21217E30500003610A /* ARCHWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50954D20217E30500003610A /* ARCHWindow.swift */; };
+		50954D28217F250E0003610A /* ARCHModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50954D27217F250E0003610A /* ARCHModule.swift */; };
+		50AB170121C1485D0058F3B0 /* ARCHSectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AB16FF21C148400058F3B0 /* ARCHSectionTableViewController.swift */; };
 		50AC942F213D673B0007B7FA /* HHModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DD95211D84B800E08A92 /* HHModule.framework */; };
 		50AC9435213D68730007B7FA /* HHListExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DDE7211DE83200E08A92 /* HHListExtension.framework */; };
 		50AC9436213D68730007B7FA /* HHListExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DDE7211DE83200E08A92 /* HHListExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -177,10 +214,8 @@
 		50BC80AE211DFACE00D77262 /* ARCHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089232420FC8DA30032985E /* ARCHViewController.swift */; };
 		50BC80AF211DFAD100D77262 /* ARCHModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089232520FC8DA30032985E /* ARCHModuleProtocols.swift */; };
 		50BC80B0211DFAD300D77262 /* ARCHEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089232620FC8DA30032985E /* ARCHEventHandler.swift */; };
-		50BC80B1211DFAD700D77262 /* ARCHWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089232C20FC8DA30032985E /* ARCHWindow.swift */; };
 		50BC80B2211DFADF00D77262 /* ARCHRouterPushOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089232920FC8DA30032985E /* ARCHRouterPushOptions.swift */; };
 		50BC80B3211DFAE200D77262 /* ARCHRouterPresentOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089232A20FC8DA30032985E /* ARCHRouterPresentOptions.swift */; };
-		50BC80B4211DFAE500D77262 /* ARCHRouterWindowOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089232B20FC8DA30032985E /* ARCHRouterWindowOptions.swift */; };
 		50BC80B5211DFAE900D77262 /* ARCHRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5089232D20FC8DA30032985E /* ARCHRouter.swift */; };
 		50C98553212AB66C0002EF4B /* Multidelegate.md in Resources */ = {isa = PBXBuildFile; fileRef = 50C98552212AB66C0002EF4B /* Multidelegate.md */; };
 		50C98562212AE9D20002EF4B /* HHPagingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C98560212AE9D20002EF4B /* HHPagingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -283,18 +318,14 @@
 		50EA303D2134529A00A95512 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5093688420F683030044CA62 /* LaunchScreen.storyboard */; };
 		50EA303F2134529A00A95512 /* HHModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5072DD95211D84B800E08A92 /* HHModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		50EA30402134529A00A95512 /* HHList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 501AA648211C6C4A002D3264 /* HHList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9C1417F42146B23C009F1073 /* ParentModuleEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1417EF2146B23B009F1073 /* ParentModuleEventHandler.swift */; };
-		9C1417F52146B23C009F1073 /* ParentModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1417F02146B23B009F1073 /* ParentModuleProtocols.swift */; };
-		9C1417F62146B23C009F1073 /* ParentModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1417F12146B23C009F1073 /* ParentModuleViewController.swift */; };
-		9C1417F72146B23C009F1073 /* ParentModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1417F22146B23C009F1073 /* ParentModuleConfigurator.swift */; };
-		9C1417F82146B23C009F1073 /* ParentModuleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1417F32146B23C009F1073 /* ParentModuleState.swift */; };
-		9C1418042146B57C009F1073 /* ChildModuleEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1417FF2146B57C009F1073 /* ChildModuleEventHandler.swift */; };
-		9C1418052146B57C009F1073 /* ChildModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1418002146B57C009F1073 /* ChildModuleViewController.swift */; };
-		9C1418062146B57C009F1073 /* ChildModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1418012146B57C009F1073 /* ChildModuleProtocols.swift */; };
-		9C1418072146B57C009F1073 /* ChildModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1418022146B57C009F1073 /* ChildModuleConfigurator.swift */; };
-		9C1418082146B57C009F1073 /* ChildModuleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1418032146B57C009F1073 /* ChildModuleState.swift */; };
+		81E49D602367446800ECF461 /* DemoUserStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E49D5F2367446800ECF461 /* DemoUserStory.swift */; };
+		81E49D6B2367474100ECF461 /* DemoModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E49D652367474100ECF461 /* DemoModuleIO.swift */; };
+		81E49D6C2367474100ECF461 /* DemoEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E49D662367474100ECF461 /* DemoEventHandler.swift */; };
+		81E49D6D2367474100ECF461 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E49D672367474100ECF461 /* DemoViewController.swift */; };
+		81E49D6E2367474100ECF461 /* DemoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E49D682367474100ECF461 /* DemoConfigurator.swift */; };
+		81E49D6F2367474100ECF461 /* DemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E49D692367474100ECF461 /* DemoViewController.xib */; };
+		81E49D702367474100ECF461 /* DemoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E49D6A2367474100ECF461 /* DemoState.swift */; };
 		9C14180B2146B6EC009F1073 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14180A2146B6EC009F1073 /* ParentView.swift */; };
-		9CF7224A2147BB0500DE0915 /* ChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF722492147BB0500DE0915 /* ChildView.swift */; };
 		9CF48AFA2167A3F70040AE49 /* HHLens.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF48AEA2167A3F60040AE49 /* HHLens.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9CF48B322167A4650040AE49 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B082167A4520040AE49 /* Operators.swift */; };
 		9CF48B352167A4650040AE49 /* Comparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48B0B2167A4530040AE49 /* Comparator.swift */; };
@@ -322,6 +353,7 @@
 		9CF48BB12167A73B0040AE49 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48BAA2167A73A0040AE49 /* UIButton.swift */; };
 		9CF48BB32167A73B0040AE49 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48BAC2167A73A0040AE49 /* UIEdgeInsets.swift */; };
 		9CF48BB42167A73B0040AE49 /* UITraitCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF48BAD2167A73B0040AE49 /* UITraitCollection.swift */; };
+		9CF7224A2147BB0500DE0915 /* ChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF722492147BB0500DE0915 /* ChildView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -331,6 +363,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 501AA647211C6C4A002D3264;
 			remoteInfo = HHList;
+		};
+		502A7B6521739CD100C6A2E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5093687020F683010044CA62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 501AA647211C6C4A002D3264;
+			remoteInfo = HHList;
+		};
+		502A7B6721739CD100C6A2E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5093687020F683010044CA62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5072DD94211D84B800E08A92;
+			remoteInfo = HHModule;
 		};
 		503FD72221402CC2008905ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -594,6 +640,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		502A7B7B21739CD100C6A2E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				502A7B7C21739CD100C6A2E8 /* HHModule.framework in Embed Frameworks */,
+				502A7B7D21739CD100C6A2E8 /* HHList.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		503FD73821402CC2008905ED /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -719,6 +777,8 @@
 		5010AA3F2118342500158C1F /* EmptyModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModuleConfigurator.swift; sourceTree = "<group>"; };
 		5010AA402118342500158C1F /* EmptyModuleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModuleState.swift; sourceTree = "<group>"; };
 		5010AA462118375B00158C1F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5016B4E221833342000D66B5 /* ARCHRouterWindowOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHRouterWindowOptions.swift; sourceTree = "<group>"; };
+		5016B4E4218336E4000D66B5 /* ARCHWindowTransitionOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHWindowTransitionOptions.swift; sourceTree = "<group>"; };
 		501AA635211C6AD9002D3264 /* ___FILEBASENAME___ModuleIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ModuleIO.swift"; sourceTree = "<group>"; };
 		501AA636211C6AD9002D3264 /* ___FILEBASENAME___EventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___EventHandler.swift"; sourceTree = "<group>"; };
 		501AA637211C6AD9002D3264 /* ___FILEBASENAME___ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "___FILEBASENAME___ViewController.swift"; sourceTree = "<group>"; };
@@ -729,6 +789,22 @@
 		501AA648211C6C4A002D3264 /* HHList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HHList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		501AA64A211C6C4B002D3264 /* HHList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHList.h; sourceTree = "<group>"; };
 		501AA64B211C6C4B002D3264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		502715682188A3CA00DF483E /* ARCHSectionListDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHSectionListDataAdapter.swift; sourceTree = "<group>"; };
+		5027156B2188A99400DF483E /* ARCHSectionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHSectionCollectionViewController.swift; sourceTree = "<group>"; };
+		502A7B56217387EC00C6A2E8 /* ARCHListDataSourceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHListDataSourceAdapter.swift; sourceTree = "<group>"; };
+		502A7B592173883000C6A2E8 /* ARCHSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHSectionViewModel.swift; sourceTree = "<group>"; };
+		502A7B5B2173893700C6A2E8 /* ARCHHeaderFooterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHHeaderFooterViewModel.swift; sourceTree = "<group>"; };
+		502A7B5F21738C5D00C6A2E8 /* ARCHSectionDataSourceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHSectionDataSourceAdapter.swift; sourceTree = "<group>"; };
+		502A7B6121739BB800C6A2E8 /* ARCHHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHHeaderFooterView.swift; sourceTree = "<group>"; };
+		502A7B8121739CD100C6A2E8 /* HHSectionListDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHSectionListDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		502A7B8421739D6200C6A2E8 /* SectionListModuleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListModuleIO.swift; sourceTree = "<group>"; };
+		502A7B8521739D6200C6A2E8 /* SectionListEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListEventHandler.swift; sourceTree = "<group>"; };
+		502A7B8621739D6200C6A2E8 /* SectionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListViewController.swift; sourceTree = "<group>"; };
+		502A7B8721739D6200C6A2E8 /* SectionListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListConfigurator.swift; sourceTree = "<group>"; };
+		502A7B8821739D6200C6A2E8 /* SectionListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListState.swift; sourceTree = "<group>"; };
+		502A7B9C2173AA6900C6A2E8 /* Example2CVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example2CVCell.swift; sourceTree = "<group>"; };
+		502A7B9D2173AA6900C6A2E8 /* Example2CVCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example2CVCellViewModel.swift; sourceTree = "<group>"; };
+		502A7B9E2173AA6900C6A2E8 /* Example2CVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Example2CVCell.xib; sourceTree = "<group>"; };
 		5032B7F421186C4600271A1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5032B7F621186C4D00271A1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		503B4265216A608200CD641D /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
@@ -814,8 +890,6 @@
 		5089232620FC8DA30032985E /* ARCHEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHEventHandler.swift; sourceTree = "<group>"; };
 		5089232920FC8DA30032985E /* ARCHRouterPushOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHRouterPushOptions.swift; sourceTree = "<group>"; };
 		5089232A20FC8DA30032985E /* ARCHRouterPresentOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHRouterPresentOptions.swift; sourceTree = "<group>"; };
-		5089232B20FC8DA30032985E /* ARCHRouterWindowOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHRouterWindowOptions.swift; sourceTree = "<group>"; };
-		5089232C20FC8DA30032985E /* ARCHWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHWindow.swift; sourceTree = "<group>"; };
 		5089232D20FC8DA30032985E /* ARCHRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHRouter.swift; sourceTree = "<group>"; };
 		5089233120FC8DA30032985E /* ARCHTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHTableViewDataSource.swift; sourceTree = "<group>"; };
 		5089233320FC8DA30032985E /* ARCHCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHCollectionViewDataSource.swift; sourceTree = "<group>"; };
@@ -834,6 +908,9 @@
 		5093688220F683030044CA62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5093688520F683030044CA62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5093688720F683030044CA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50954D20217E30500003610A /* ARCHWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHWindow.swift; sourceTree = "<group>"; };
+		50954D27217F250E0003610A /* ARCHModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHModule.swift; sourceTree = "<group>"; };
+		50AB16FF21C148400058F3B0 /* ARCHSectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCHSectionTableViewController.swift; sourceTree = "<group>"; };
 		50B89519214BF00900242372 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		50BC80D02121748400D77262 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		50BC80D12121748400D77262 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -885,6 +962,13 @@
 		50FA81F3211AE47C00ADA769 /* ListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConfigurator.swift; sourceTree = "<group>"; };
 		50FA81F4211AE47C00ADA769 /* ListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListState.swift; sourceTree = "<group>"; };
 		50FA8208211C630900ADA769 /* ARCHCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCHCellViewModel.swift; sourceTree = "<group>"; };
+		81E49D5F2367446800ECF461 /* DemoUserStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUserStory.swift; sourceTree = "<group>"; };
+		81E49D652367474100ECF461 /* DemoModuleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModuleIO.swift; sourceTree = "<group>"; };
+		81E49D662367474100ECF461 /* DemoEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoEventHandler.swift; sourceTree = "<group>"; };
+		81E49D672367474100ECF461 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		81E49D682367474100ECF461 /* DemoConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoConfigurator.swift; sourceTree = "<group>"; };
+		81E49D692367474100ECF461 /* DemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoViewController.xib; sourceTree = "<group>"; };
+		81E49D6A2367474100ECF461 /* DemoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoState.swift; sourceTree = "<group>"; };
 		9C1417EF2146B23B009F1073 /* ParentModuleEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModuleEventHandler.swift; sourceTree = "<group>"; };
 		9C1417F02146B23B009F1073 /* ParentModuleProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModuleProtocols.swift; sourceTree = "<group>"; };
 		9C1417F12146B23C009F1073 /* ParentModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentModuleViewController.swift; sourceTree = "<group>"; };
@@ -896,8 +980,6 @@
 		9C1418022146B57C009F1073 /* ChildModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildModuleConfigurator.swift; sourceTree = "<group>"; };
 		9C1418032146B57C009F1073 /* ChildModuleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildModuleState.swift; sourceTree = "<group>"; };
 		9C14180A2146B6EC009F1073 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
-		9CF722492147BB0500DE0915 /* ChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildView.swift; sourceTree = "<group>"; };
-		9CF7224B2147E92100DE0915 /* INHERITANCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = INHERITANCE.md; sourceTree = "<group>"; };
 		9CF48AE82167A3F60040AE49 /* HHLens.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HHLens.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF48AEA2167A3F60040AE49 /* HHLens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHLens.h; sourceTree = "<group>"; };
 		9CF48AEB2167A3F60040AE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -928,6 +1010,8 @@
 		9CF48BAC2167A73A0040AE49 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 		9CF48BAD2167A73B0040AE49 /* UITraitCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITraitCollection.swift; sourceTree = "<group>"; };
 		9CF48BCE2167BE0A0040AE49 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		9CF722492147BB0500DE0915 /* ChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildView.swift; sourceTree = "<group>"; };
+		9CF7224B2147E92100DE0915 /* INHERITANCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = INHERITANCE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -935,6 +1019,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502A7B7321739CD100C6A2E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502A7B7421739CD100C6A2E8 /* HHModule.framework in Frameworks */,
+				502A7B7521739CD100C6A2E8 /* HHList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1108,6 +1201,15 @@
 			path = EmptyModule;
 			sourceTree = "<group>";
 		};
+		5016B4E121833342000D66B5 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				5016B4E221833342000D66B5 /* ARCHRouterWindowOptions.swift */,
+				5016B4E4218336E4000D66B5 /* ARCHWindowTransitionOptions.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
 		501AA633211C6AD9002D3264 /* HHTemplates */ = {
 			isa = PBXGroup;
 			children = (
@@ -1149,6 +1251,18 @@
 			path = HHBestPractice;
 			sourceTree = "<group>";
 		};
+		502A7B8321739D4400C6A2E8 /* SectionList */ = {
+			isa = PBXGroup;
+			children = (
+				502A7B8721739D6200C6A2E8 /* SectionListConfigurator.swift */,
+				502A7B8621739D6200C6A2E8 /* SectionListViewController.swift */,
+				502A7B8521739D6200C6A2E8 /* SectionListEventHandler.swift */,
+				502A7B8421739D6200C6A2E8 /* SectionListModuleIO.swift */,
+				502A7B8821739D6200C6A2E8 /* SectionListState.swift */,
+			);
+			path = SectionList;
+			sourceTree = "<group>";
+		};
 		503B4264216A608200CD641D /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1162,6 +1276,8 @@
 			children = (
 				503FD71621400D0E008905ED /* ARCHTableViewController.swift */,
 				503FD71721400D0E008905ED /* ARCHCollectionViewController.swift */,
+				5027156B2188A99400DF483E /* ARCHSectionCollectionViewController.swift */,
+				50AB16FF21C148400058F3B0 /* ARCHSectionTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1197,6 +1313,9 @@
 				50679793212572610034CDA2 /* ExampleCellViewModel.swift */,
 				50679794212572610034CDA2 /* ExampleCell.swift */,
 				50679795212572610034CDA2 /* ExampleCell.xib */,
+				502A7B9C2173AA6900C6A2E8 /* Example2CVCell.swift */,
+				502A7B9D2173AA6900C6A2E8 /* Example2CVCellViewModel.swift */,
+				502A7B9E2173AA6900C6A2E8 /* Example2CVCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1402,6 +1521,7 @@
 			children = (
 				5089232120FC8DA30032985E /* ARCHModuleConfigurator.swift */,
 				5089232220FC8DA30032985E /* ARCHModuleID.swift */,
+				50954D27217F250E0003610A /* ARCHModule.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -1420,8 +1540,8 @@
 			isa = PBXGroup;
 			children = (
 				5089232820FC8DA30032985E /* Options */,
-				5089232C20FC8DA30032985E /* ARCHWindow.swift */,
 				5089232D20FC8DA30032985E /* ARCHRouter.swift */,
+				50954D20217E30500003610A /* ARCHWindow.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -1429,9 +1549,9 @@
 		5089232820FC8DA30032985E /* Options */ = {
 			isa = PBXGroup;
 			children = (
+				5016B4E121833342000D66B5 /* Window */,
 				5089232920FC8DA30032985E /* ARCHRouterPushOptions.swift */,
 				5089232A20FC8DA30032985E /* ARCHRouterPresentOptions.swift */,
-				5089232B20FC8DA30032985E /* ARCHRouterWindowOptions.swift */,
 			);
 			path = Options;
 			sourceTree = "<group>";
@@ -1454,8 +1574,13 @@
 				5089233220FC8DA30032985E /* CollectionView */,
 				5089233420FC8DA30032985E /* ARCHListView.swift */,
 				5089233520FC8DA30032985E /* ARCHCell.swift */,
+				502A7B6121739BB800C6A2E8 /* ARCHHeaderFooterView.swift */,
 				5089233620FC8DA30032985E /* ARCHListDataSource.swift */,
+				502A7B56217387EC00C6A2E8 /* ARCHListDataSourceAdapter.swift */,
+				502A7B5F21738C5D00C6A2E8 /* ARCHSectionDataSourceAdapter.swift */,
+				502A7B592173883000C6A2E8 /* ARCHSectionViewModel.swift */,
 				50FA8208211C630900ADA769 /* ARCHCellViewModel.swift */,
+				502A7B5B2173893700C6A2E8 /* ARCHHeaderFooterViewModel.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -1480,6 +1605,7 @@
 			isa = PBXGroup;
 			children = (
 				50FA81EB211ACF8D00ADA769 /* ARCHEmptyListDataAdapter.swift */,
+				502715682188A3CA00DF483E /* ARCHSectionListDataAdapter.swift */,
 			);
 			path = DataAdapter;
 			sourceTree = "<group>";
@@ -1525,6 +1651,7 @@
 				50D1DBAD215119F9005999F0 /* HHSkeleton.framework */,
 				9CF48AE82167A3F60040AE49 /* HHLens.framework */,
 				50CD79A3216A5CDC005C11A6 /* HHLensDemo.app */,
+				502A7B8121739CD100C6A2E8 /* HHSectionListDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1539,12 +1666,15 @@
 				50D264672121B43300E3B47A /* Network */,
 				5072DDD0211DE36600E08A92 /* ListExtension */,
 				50FA81EF211AE45900ADA769 /* List */,
+				502A7B8321739D4400C6A2E8 /* SectionList */,
 				9C1417FE2146B551009F1073 /* ChildModule */,
 				9C1417EE2146B1EF009F1073 /* ParentModule */,
+				81E49D712367475300ECF461 /* Demo */,
 				5010AA3B2118341300158C1F /* EmptyModule */,
 				50C98574212AEB670002EF4B /* Pagination */,
 				507F14D72137EAC80087DCDB /* Indication */,
 				5089235E20FC8E7B0032985E /* ModulesUserStory.swift */,
+				81E49D5F2367446800ECF461 /* DemoUserStory.swift */,
 				5093687B20F683010044CA62 /* AppDelegate.swift */,
 				5093688220F683030044CA62 /* Assets.xcassets */,
 				5093688420F683030044CA62 /* LaunchScreen.storyboard */,
@@ -1682,6 +1812,19 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		81E49D712367475300ECF461 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				81E49D652367474100ECF461 /* DemoModuleIO.swift */,
+				81E49D662367474100ECF461 /* DemoEventHandler.swift */,
+				81E49D672367474100ECF461 /* DemoViewController.swift */,
+				81E49D682367474100ECF461 /* DemoConfigurator.swift */,
+				81E49D692367474100ECF461 /* DemoViewController.xib */,
+				81E49D6A2367474100ECF461 /* DemoState.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		9C1417EE2146B1EF009F1073 /* ParentModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -1713,8 +1856,8 @@
 				9CF722492147BB0500DE0915 /* ChildView.swift */,
 			);
 			path = ModuleDemo;
-            sourceTree = "<group>";
-        };
+			sourceTree = "<group>";
+		};
 		9CF48AE92167A3F60040AE49 /* HHLens */ = {
 			isa = PBXGroup;
 			children = (
@@ -1877,6 +2020,27 @@
 			productReference = 501AA648211C6C4A002D3264 /* HHList.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		502A7B6321739CD100C6A2E8 /* HHSectionListDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502A7B7E21739CD100C6A2E8 /* Build configuration list for PBXNativeTarget "HHSectionListDemo" */;
+			buildPhases = (
+				502A7B6821739CD100C6A2E8 /* Sources */,
+				502A7B7321739CD100C6A2E8 /* Frameworks */,
+				502A7B7621739CD100C6A2E8 /* Swiftlint */,
+				502A7B7721739CD100C6A2E8 /* Resources */,
+				502A7B7B21739CD100C6A2E8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				502A7B6421739CD100C6A2E8 /* PBXTargetDependency */,
+				502A7B6621739CD100C6A2E8 /* PBXTargetDependency */,
+			);
+			name = HHSectionListDemo;
+			productName = HHLitDemo;
+			productReference = 502A7B8121739CD100C6A2E8 /* HHSectionListDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		503FD72021402CC2008905ED /* HHListControllerDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 503FD73B21402CC2008905ED /* Build configuration list for PBXNativeTarget "HHListControllerDemo" */;
@@ -1925,6 +2089,7 @@
 				508F842921396D1D00137D66 /* Swiftlint */,
 				5067976821256CF80034CDA2 /* Resources */,
 				5067979021256FAD0034CDA2 /* Embed Frameworks */,
+				7458E00422CBAF8800BDB2E2 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -2238,12 +2403,14 @@
 					};
 					5072DD94211D84B800E08A92 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 					5072DDE6211DE83200E08A92 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					507F149A2137E6B50087DCDB = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 					5093687720F683010044CA62 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -2253,6 +2420,7 @@
 					};
 					50D1DBAC215119F9005999F0 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 					9CF48AE72167A3F60040AE49 = {
 						CreatedOnToolsVersion = 10.0;
@@ -2274,6 +2442,7 @@
 			targets = (
 				5093687720F683010044CA62 /* HHModuleDemo */,
 				5067976921256CF80034CDA2 /* HHListDemo */,
+				502A7B6321739CD100C6A2E8 /* HHSectionListDemo */,
 				503FD72021402CC2008905ED /* HHListControllerDemo */,
 				506797C62125761C0034CDA2 /* HHListExtDemo */,
 				507ABCAF21257C64003DBDD7 /* HHNetworkDemo */,
@@ -2298,6 +2467,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502A7B7721739CD100C6A2E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502A7B7821739CD100C6A2E8 /* Assets.xcassets in Resources */,
+				502A7B7921739CD100C6A2E8 /* ExampleCell.xib in Resources */,
+				502A7BA32173AA6900C6A2E8 /* Example2CVCell.xib in Resources */,
+				502A7B7A21739CD100C6A2E8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2386,6 +2566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5093688620F683030044CA62 /* LaunchScreen.storyboard in Resources */,
+				81E49D6F2367474100ECF461 /* DemoViewController.xib in Resources */,
 				5067975121241A7E0034CDA2 /* README.md in Resources */,
 				50C98553212AB66C0002EF4B /* Multidelegate.md in Resources */,
 				5072DDA8211DBCBC00E08A92 /* templates.md in Resources */,
@@ -2449,6 +2630,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		502A7B7621739CD100C6A2E8 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    if which swiftlint >/dev/null; then\n        swiftlint\n    fi\nfi";
+		};
 		503FD73321402CC2008905ED /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2475,7 +2670,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    if which swiftlint >/dev/null; then\n        swiftlint\n    fi\nfi";
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    if which swiftlint >/dev/null; then\n        swiftlint\n    fi\nfi\n";
 		};
 		506797F7212578120034CDA2 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2491,7 +2686,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		507ABCC221257C64003DBDD7 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2527,7 +2722,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		507C3FE12142B32800A21073 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2545,7 +2740,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		508F842921396D1D00137D66 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2559,7 +2754,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    if which swiftlint >/dev/null; then\n        swiftlint\n    fi\nfi";
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    if which swiftlint >/dev/null; then\n        swiftlint\n    fi\nfi\n";
 		};
 		508F842A21396D4D00137D66 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2631,7 +2826,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		50C9859D212AEBFF0002EF4B /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2671,6 +2866,26 @@
 			shellPath = /bin/sh;
 			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n    if which swiftlint >/dev/null; then\n        swiftlint\n    fi\nfi";
 		};
+		7458E00422CBAF8800BDB2E2 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/DeepDiff.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DeepDiff.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -2678,15 +2893,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5027156A2188A3E200DF483E /* ARCHSectionListDataAdapter.swift in Sources */,
+				50AB170121C1485D0058F3B0 /* ARCHSectionTableViewController.swift in Sources */,
 				501AA65A211C6C8B002D3264 /* ARCHListDataSource.swift in Sources */,
 				503FD71921400D0E008905ED /* ARCHCollectionViewController.swift in Sources */,
+				502A7B5D2173894C00C6A2E8 /* ARCHHeaderFooterViewModel.swift in Sources */,
+				502A7B58217387F900C6A2E8 /* ARCHListDataSourceAdapter.swift in Sources */,
+				5027156C2188A99400DF483E /* ARCHSectionCollectionViewController.swift in Sources */,
+				502A7B5E217389FA00C6A2E8 /* ARCHSectionViewModel.swift in Sources */,
 				501AA656211C6C7E002D3264 /* ARCHTableViewDataSource.swift in Sources */,
 				501AA65B211C6C8E002D3264 /* ARCHCellViewModel.swift in Sources */,
 				501AA657211C6C83002D3264 /* ARCHCollectionViewDataSource.swift in Sources */,
+				502A7B6221739BB800C6A2E8 /* ARCHHeaderFooterView.swift in Sources */,
+				502A7B6021738C5D00C6A2E8 /* ARCHSectionDataSourceAdapter.swift in Sources */,
 				501AA65C211C6C9A002D3264 /* ARCHEmptyListDataAdapter.swift in Sources */,
 				503FD71821400D0E008905ED /* ARCHTableViewController.swift in Sources */,
 				501AA658211C6C85002D3264 /* ARCHListView.swift in Sources */,
 				501AA659211C6C88002D3264 /* ARCHCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502A7B6821739CD100C6A2E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502A7B6921739CD100C6A2E8 /* ListState.swift in Sources */,
+				502A7B6A21739CD100C6A2E8 /* ListViewController.swift in Sources */,
+				502A7BA12173AA6900C6A2E8 /* Example2CVCellViewModel.swift in Sources */,
+				502A7B6B21739CD100C6A2E8 /* ModulesUserStory.swift in Sources */,
+				502A7B6C21739CD100C6A2E8 /* ExampleCell.swift in Sources */,
+				502A7B8F21739D6200C6A2E8 /* SectionListConfigurator.swift in Sources */,
+				502A7B9121739D6200C6A2E8 /* SectionListState.swift in Sources */,
+				502A7B9F2173AA6900C6A2E8 /* Example2CVCell.swift in Sources */,
+				502A7B6D21739CD100C6A2E8 /* SimpleEntity.swift in Sources */,
+				502A7B8D21739D6200C6A2E8 /* SectionListViewController.swift in Sources */,
+				502A7B8B21739D6200C6A2E8 /* SectionListEventHandler.swift in Sources */,
+				502A7B6E21739CD100C6A2E8 /* AppDelegate.swift in Sources */,
+				502A7B6F21739CD100C6A2E8 /* ListEventHandler.swift in Sources */,
+				502A7B7021739CD100C6A2E8 /* ExampleCellViewModel.swift in Sources */,
+				502A7B8921739D6200C6A2E8 /* SectionListModuleIO.swift in Sources */,
+				502A7B7121739CD100C6A2E8 /* ListConfigurator.swift in Sources */,
+				502A7B7221739CD100C6A2E8 /* ListModuleIO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2762,13 +3009,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BC80AE211DFACE00D77262 /* ARCHViewController.swift in Sources */,
-				50BC80B4211DFAE500D77262 /* ARCHRouterWindowOptions.swift in Sources */,
 				50BC80B2211DFADF00D77262 /* ARCHRouterPushOptions.swift in Sources */,
-				50BC80B1211DFAD700D77262 /* ARCHWindow.swift in Sources */,
+				5016B4E5218336E4000D66B5 /* ARCHWindowTransitionOptions.swift in Sources */,
+				50954D28217F250E0003610A /* ARCHModule.swift in Sources */,
 				50BC80B5211DFAE900D77262 /* ARCHRouter.swift in Sources */,
 				50BC80AF211DFAD100D77262 /* ARCHModuleProtocols.swift in Sources */,
 				50BC80AD211DFACA00D77262 /* ARCHModuleID.swift in Sources */,
 				50BC80B3211DFAE200D77262 /* ARCHRouterPresentOptions.swift in Sources */,
+				50954D21217E30500003610A /* ARCHWindow.swift in Sources */,
+				5016B4E321833342000D66B5 /* ARCHRouterWindowOptions.swift in Sources */,
 				50BC80AC211DFAC700D77262 /* ARCHModuleConfigurator.swift in Sources */,
 				50BC80B0211DFAD300D77262 /* ARCHEventHandler.swift in Sources */,
 			);
@@ -2848,24 +3097,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1418072146B57C009F1073 /* ChildModuleConfigurator.swift in Sources */,
+				81E49D702367474100ECF461 /* DemoState.swift in Sources */,
 				50EA3022213420B600A95512 /* EmptyModuleEventHandler.swift in Sources */,
 				507ABCCF21257C97003DBDD7 /* EmptyModuleConfigurator.swift in Sources */,
+				81E49D602367446800ECF461 /* DemoUserStory.swift in Sources */,
 				9C14180B2146B6EC009F1073 /* ParentView.swift in Sources */,
-				9C1417F42146B23C009F1073 /* ParentModuleEventHandler.swift in Sources */,
-				9C1418082146B57C009F1073 /* ChildModuleState.swift in Sources */,
+				81E49D6B2367474100ECF461 /* DemoModuleIO.swift in Sources */,
 				5093687C20F683010044CA62 /* AppDelegate.swift in Sources */,
-				9C1417F62146B23C009F1073 /* ParentModuleViewController.swift in Sources */,
 				50EA3021213420B600A95512 /* EmptyModuleViewController.swift in Sources */,
 				9CF7224A2147BB0500DE0915 /* ChildView.swift in Sources */,
 				5089236720FC8E7B0032985E /* ModulesUserStory.swift in Sources */,
+				81E49D6C2367474100ECF461 /* DemoEventHandler.swift in Sources */,
+				81E49D6E2367474100ECF461 /* DemoConfigurator.swift in Sources */,
 				50EA3023213420B600A95512 /* EmptyModuleModuleIO.swift in Sources */,
-				9C1418062146B57C009F1073 /* ChildModuleProtocols.swift in Sources */,
-				9C1418042146B57C009F1073 /* ChildModuleEventHandler.swift in Sources */,
-				9C1417F82146B23C009F1073 /* ParentModuleState.swift in Sources */,
-				9C1417F72146B23C009F1073 /* ParentModuleConfigurator.swift in Sources */,
-				9C1418052146B57C009F1073 /* ChildModuleViewController.swift in Sources */,
-				9C1417F52146B23C009F1073 /* ParentModuleProtocols.swift in Sources */,
+				81E49D6D2367474100ECF461 /* DemoViewController.swift in Sources */,
 				50EA3026213421E800A95512 /* Label.swift in Sources */,
 				50EA3024213420B600A95512 /* EmptyModuleState.swift in Sources */,
 			);
@@ -3005,6 +3250,16 @@
 			isa = PBXTargetDependency;
 			target = 501AA647211C6C4A002D3264 /* HHList */;
 			targetProxy = 501AA64D211C6C4B002D3264 /* PBXContainerItemProxy */;
+		};
+		502A7B6421739CD100C6A2E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 501AA647211C6C4A002D3264 /* HHList */;
+			targetProxy = 502A7B6521739CD100C6A2E8 /* PBXContainerItemProxy */;
+		};
+		502A7B6621739CD100C6A2E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5072DD94211D84B800E08A92 /* HHModule */;
+			targetProxy = 502A7B6721739CD100C6A2E8 /* PBXContainerItemProxy */;
 		};
 		503FD72121402CC2008905ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3216,9 +3471,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HHList/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3228,7 +3487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3246,9 +3505,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HHList/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3258,10 +3521,62 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		502A7B7F21739CD100C6A2E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D HHSectionList";
+				PRODUCT_BUNDLE_IDENTIFIER = handh.HHSectionListDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		502A7B8021739CD100C6A2E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-D HHSectionList";
+				PRODUCT_BUNDLE_IDENTIFIER = handh.HHSectionListDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -3272,8 +3587,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3282,7 +3601,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHListControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -3294,8 +3613,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3304,7 +3627,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHListControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -3326,7 +3649,7 @@
 				);
 				INFOPLIST_FILE = HHNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3336,7 +3659,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3360,7 +3683,7 @@
 				);
 				INFOPLIST_FILE = HHNetwork/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3370,7 +3693,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3384,8 +3707,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3394,7 +3721,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHListDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -3406,8 +3733,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3416,7 +3747,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHListDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -3433,7 +3764,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3442,7 +3773,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHListExtDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -3459,7 +3790,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3468,7 +3799,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHListExtDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -3484,9 +3815,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HHModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3496,7 +3831,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3514,9 +3849,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HHModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3526,7 +3865,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3550,7 +3889,7 @@
 				);
 				INFOPLIST_FILE = HHListExtension/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3560,7 +3899,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3584,7 +3923,7 @@
 				);
 				INFOPLIST_FILE = HHListExtension/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3594,7 +3933,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3613,7 +3952,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3622,7 +3961,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHNetworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -3639,7 +3978,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3648,7 +3987,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHNetworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -3666,7 +4005,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HHIndication/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3676,7 +4015,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3696,7 +4035,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HHIndication/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3706,7 +4045,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3725,7 +4064,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3734,7 +4073,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHIndicationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -3751,7 +4090,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3761,7 +4100,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -3817,7 +4156,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -3871,7 +4210,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -3892,7 +4231,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3901,7 +4240,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHModuleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -3918,7 +4257,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3927,7 +4266,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHModuleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -3945,7 +4284,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HHPagingManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3955,7 +4294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -3975,7 +4314,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HHPagingManager/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3985,7 +4324,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -4004,7 +4343,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4013,7 +4352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHPaginationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -4030,7 +4369,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4039,7 +4378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHPaginationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -4056,7 +4395,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4065,7 +4404,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHModuleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -4082,7 +4421,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4091,7 +4430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHModuleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -4113,7 +4452,7 @@
 				);
 				INFOPLIST_FILE = HHSkeleton/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4123,7 +4462,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -4147,7 +4486,7 @@
 				);
 				INFOPLIST_FILE = HHSkeleton/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4157,7 +4496,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -4177,7 +4516,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4186,7 +4525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = handh.HHSkeletonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -4204,7 +4543,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4214,7 +4553,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -4232,7 +4571,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HHLens/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4244,7 +4583,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -4264,7 +4603,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = HHLens/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -4275,7 +4614,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -4290,6 +4629,15 @@
 			buildConfigurations = (
 				501AA652211C6C4B002D3264 /* Debug */,
 				501AA653211C6C4B002D3264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		502A7B7E21739CD100C6A2E8 /* Build configuration list for PBXNativeTarget "HHSectionListDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502A7B7F21739CD100C6A2E8 /* Debug */,
+				502A7B8021739CD100C6A2E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

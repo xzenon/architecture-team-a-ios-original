@@ -15,6 +15,26 @@ final class EmptyModuleEventHandler: ARCHEventHandler<EmptyModuleState>, EmptyMo
     override func viewIsReady() {
         super.viewIsReady()
 
-        state.text = "Hello world"
+        state.text = "Hello world 1"
+    }
+
+    func updateText() {
+        if state.text == "Hello world 2" {
+            return
+        }
+
+        state.text = "Hello world 2"
+    }
+
+    // MARK: - EmptyModuleModuleInput
+
+    var someValue: Int = 0 {
+        didSet {
+            print("Change some value")
+        }
+    }
+
+    func set(moduleOutput: ARCHModuleOutput) {
+        self.moduleOutput = moduleOutput as? EmptyModuleModuleOutput
     }
 }

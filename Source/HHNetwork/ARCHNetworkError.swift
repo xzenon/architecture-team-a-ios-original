@@ -8,12 +8,19 @@
 
 import Foundation
 
+struct ARCHServerError: Codable {
+    var code: Int
+    var name: String
+    var message: String
+}
+
 public struct ARCHNetworkError: Swift.Error, Codable {
 
     public var status: Int
     public var code: Int
     public var name: String
     public var message: String
+    public var fields: [String: String] = [:]
 
     public init(
         status: Int = 0,
@@ -33,10 +40,15 @@ public struct ARCHNetworkError: Swift.Error, Codable {
     }
 
     public var debugDescription: String {
-        return "status:\(status) | code:\(code) | name:\(name) | message:\(message) | time:\(time)"
+        return "status:\(status) | code:\(code) | name:\(name) | message:\(message) | time:\(String(describing: time))"
     }
 
     public var errorDescription: String {
         return message
     }
+}
+
+public protocol ARCHNetworkErrorDecodable {
+
+    var error: ARCHNetworkError { get }
 }

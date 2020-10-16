@@ -8,19 +8,53 @@
 
 import UIKit
 
-open class ARCHViewController<S: ARCHState, Out: ACRHViewOutput>: UIViewController, ARCHRouter, ARCHViewRenderable {
+open class ARCHViewController<State: ARCHState, ViewOutput: ACRHViewOutput>: UIViewController, ARCHModule, ARCHRouter, ARCHViewRenderable {
+    public typealias ViewState = State
 
-    public typealias State = S
+    public var output: ViewOutput?
 
-    public var output: Out?
+    private var moduleIsReady: Bool = false
 
     open var autorenderIgnoreViews: [ARCHViewInput] {
         return []
     }
 
-    open func render(state: State) {
-        var views = autorenderViews
+    private let debugLog: ((String) -> Void)? = {
+        if let debugMode = ProcessInfo.processInfo.environment["ARCHViewControllerDebugMode"], Int(debugMode) == 1 {
+            return { print("[\(Thread.isMainThread ? "Main" : "Back")][ARCHViewController] " + $0) }
+        } else {
+            return nil
+        }
+    }()
+
+    open func insert(to module: ARCHRouter, container: UIView, animated: Bool) {
+        guard let vc = module as? UIViewController else {
+            return
+        }
+        vc.addChild(self)
+
+        view.translatesAutoresizingMaskIntoConstraints = false
+        container.addSubview(view)
+        NSLayoutConstraint.activate([
+            view.topAnchor.constraint(equalTo: container.topAnchor),
+            view.leftAnchor.constraint(equalTo: container.leftAnchor),
+            view.rightAnchor.constraint(equalTo: container.rightAnchor),
+            view.bottomAnchor.constraint(equalTo: container.bottomAnchor)
+        ])
+
+        didMove(toParent: self)
+    }
+
+    open func render(state: ViewState) {
+        debugLog?("begin render state")
+
+        let views = autorenderViews
+        debugLog?("Autorender views:")
+        views.forEach({ debugLog?("\(type(of: $0))") })
+
         let substates = self.substates(state: state)
+        debugLog?("Autorender states:")
+        substates.forEach({ debugLog?("\(type(of: $0))") })
 
         var index: Int = 0
         while index < views.count {
@@ -36,52 +70,74 @@ open class ARCHViewController<S: ARCHState, Out: ACRHViewOutput>: UIViewControll
             index += 1
         }
 
-        print("[ARCHViewController] end render(state:)")
+        debugLog?("end render state")
     }
 
-    private func substates(state: State) -> [Any] {
+    private func substates(state: ViewState) -> [Any] {
         return Mirror(reflecting: state).children.map { $0.value }
     }
 
+    /**
+     Извлекаем свойства для каждого наследника данного класса
+     */
     private var autorenderViews: [ARCHViewInput] {
-        var mirrors: [Mirror] = []
-        var mirror: Mirror = Mirror(reflecting: self)
+        var properies: [ARCHViewInput] = []
+        let parentType = String(describing: ARCHViewController<State, ViewOutput>.self)
+        var mirror = Mirror(reflecting: self)
 
-        mirrors.append(mirror)
-
-        while let superclassMirror = mirror.superclassMirror,
-            String(describing: mirror.subjectType) != String(describing: UIViewController.self) {
-                mirrors.append(superclassMirror)
-                mirror = superclassMirror
-        }
-
-        let children = mirrors.reduce([], { (result: [Mirror.Child], mirror: Mirror) -> [Mirror.Child] in
-            var result = result
-            result.append(contentsOf: mirror.children)
-            return result
-        })
-
-        return children
-            .compactMap({ item -> ARCHViewInput? in
-                guard let value = item.value as? ARCHViewInput else {
+        repeat {
+            let currentProperties = mirror.children.compactMap { _, value -> ARCHViewInput? in
+                guard let viewInput = value as? ARCHViewInput else {
+                    debugLog?("Not supported \(type(of: value))")
                     return nil
                 }
 
-                if autorenderIgnoreViews.contains(where: { $0 === value }) {
+                if autorenderIgnoreViews.contains(where: { $0 === viewInput }) {
+                    debugLog?("Ignored property \(type(of: value))")
                     return nil
                 } else {
-                    return value
+                    debugLog?("Add property \(type(of: value))")
+                    return viewInput
                 }
-            })
+            }
+
+            properies.append(contentsOf: currentProperties)
+
+            if let superClassMirror = mirror.superclassMirror {
+                mirror = superClassMirror
+            } else {
+                break
+            }
+        } while String(describing: mirror.subjectType) != parentType
+
+        return properies
     }
 
-    override open func viewDidLoad() {
-        super.viewDidLoad()
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
 
-        prepareRootView()
-        output?.viewIsReady()
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
 
     open func prepareRootView() {
     }
+
+    // MARK: - ARCHModule
+
+    public var router: ARCHRouter {
+        if !moduleIsReady {
+            moduleIsReady = true
+            prepareRootView()
+            output?.viewIsReady()
+        }
+        return self
+    }
+
+    public var moduleInput: ARCHModuleInput? {
+        return output as? ARCHModuleInput
+    }
+
+    public var moduleID: String?
 }

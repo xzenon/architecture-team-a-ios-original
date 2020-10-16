@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import DeepDiff
 
-open class ARCHTableViewController<D: Hashable, VM: ARCHCellViewModel & ARCHModelInitilizable, C: UITableViewCell & ARCHCell>: NSObject {
+open class ARCHTableViewController<D: DiffAware, VM: ARCHCellViewModel & ARCHModelInitilizable, C: UITableViewCell & ARCHCell>: NSObject {
 
     public let viewDataSource: ARCHTableViewDataSource
     public let dataAdapter: ARCHEmptyListDataAdapter<D, VM>
@@ -77,5 +78,9 @@ open class ARCHTableViewController<D: Hashable, VM: ARCHCellViewModel & ARCHMode
     open func didSet(data: [D]) {
         dataAdapter.data = data
         tableView.reloadData()
+    }
+
+    public func viewModelAt(indexPath: IndexPath) -> VM? {
+        return dataAdapter.cellViewModelAt(indexPath: indexPath) as? VM
     }
 }

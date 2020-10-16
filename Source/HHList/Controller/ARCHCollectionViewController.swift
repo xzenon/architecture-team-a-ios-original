@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import DeepDiff
 
 // swiftlint:disable:next line_length
-open class ARCHCollectionViewController<D: Hashable, VM: ARCHCellViewModel & ARCHModelInitilizable, C: UICollectionViewCell & ARCHCell>: NSObject {
+open class ARCHCollectionViewController<D: DiffAware, VM: ARCHCellViewModel & ARCHModelInitilizable, C: UICollectionViewCell & ARCHCell>: NSObject {
 
     public let viewDataSource: ARCHCollectionViewDataSource
     public let dataAdapter: ARCHEmptyListDataAdapter<D, VM>
@@ -56,11 +57,12 @@ open class ARCHCollectionViewController<D: Hashable, VM: ARCHCellViewModel & ARC
     }
 
     convenience public init(
-        collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout()),
+        mapBlock: ((D) -> VM?)? = nil
         ) {
 
         let dataSource = ARCHCollectionViewDataSource(view: collectionView)
-        let dataAdapter = ARCHEmptyListDataAdapter<D, VM>()
+        let dataAdapter = ARCHEmptyListDataAdapter<D, VM>(map: mapBlock)
         self.init(dataSource: dataSource, dataAdapter: dataAdapter)
     }
 
@@ -85,5 +87,9 @@ open class ARCHCollectionViewController<D: Hashable, VM: ARCHCellViewModel & ARC
     open func didSet(data: [D]) {
         dataAdapter.data = data
         collectionView.reloadData()
+    }
+
+    public func viewModelAt(indexPath: IndexPath) -> VM? {
+        return dataAdapter.cellViewModelAt(indexPath: indexPath) as? VM
     }
 }

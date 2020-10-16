@@ -9,18 +9,26 @@
 import Foundation
 import HHModule
 
+// swiftlint:disable identifier_name
 enum ModulesUserStory: ARCHModuleID {
-    case main
+#if HHModule
+    case mainModule(EmptyModuleIO)
+#else
+    case mainModule
+#endif
+// swiftlint:enable identifier_name
 
     var configurator: ARCHModuleConfigurator {
         switch self {
-        case .main:
 #if HHModule
-            return ChildModuleConfigurator(moduleIO: nil)
-            //return ParentModuleConfigurator(moduleIO: nil)
-            //return EmptyModuleConfigurator(moduleIO: nil)
-#elseif HHList
+        case let .mainModule(moduleIO):
+            return EmptyModuleConfigurator(moduleIO: moduleIO)
+#else
+        case .mainModule:
+#if HHList
             return ListConfigurator(moduleIO: nil)
+#elseif HHSectionList
+            return SectionListConfigurator(moduleIO: nil)
 #elseif HHListExtDemo
             return ListExtConfigurator(moduleIO: nil)
 #elseif HHNetwork
@@ -33,6 +41,7 @@ enum ModulesUserStory: ARCHModuleID {
             return IndicationDemoConfigurator(moduleIO: nil)
 #elseif HHLens
             return EmptyModuleConfigurator(moduleIO: nil)
+#endif
 #endif
         }
     }

@@ -13,8 +13,8 @@ open class ARCHIndicationHelper<T: ARCHIndicationState>: ARCHViewInput {
 
     public weak var container: ARCHIndicationContainer?
 
-    private var providers: [ARCHIndicationTypes: ARCHIndicationViewProvider] = [:]
-    private var currentView: ARCHIndicationView?
+    public var providers: [ARCHIndicationTypes: ARCHIndicationViewProvider] = [:]
+    public var currentView: ARCHIndicationView?
 
     public init() {}
 
@@ -35,12 +35,10 @@ open class ARCHIndicationHelper<T: ARCHIndicationState>: ARCHViewInput {
 
     // MARK: - ARCHViewInput
 
-    public func update(state: Any) -> Bool {
+    open func update(state: Any) -> Bool {
         guard let state = state as? T, let container = container else {
             return false
         }
-
-        // TODO: Добавить аниматор
 
         currentView?.removeFrom(container: container.contextView)
 
@@ -60,16 +58,13 @@ open class ARCHIndicationHelper<T: ARCHIndicationState>: ARCHViewInput {
         return true
     }
 
-    public func set(visible: Bool) {
+    open func set(visible: Bool) {
         if !visible, let container = container {
-            // TODO: Анимация
             currentView?.removeFrom(container: container.contextView)
         }
     }
 
-    // MARK: - Private
-
-    private func providerBy(type: ARCHIndicationTypes) -> ARCHIndicationViewProvider? {
+    open func providerBy(type: ARCHIndicationTypes) -> ARCHIndicationViewProvider? {
         if let key = providers.keys.first(where: { $0.contains(type) }) {
             return providers[key]
         } else {

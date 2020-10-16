@@ -31,11 +31,11 @@ public protocol ARCHSkeletonView {
 
 public extension ARCHSkeletonView {
 
-    public var skeletonSubviews: [UIView]? {
+    var skeletonSubviews: [UIView]? {
         return nil
     }
 
-    public func contours(on rootView: UIView) -> [UIBezierPath] {
+    func contours(on rootView: UIView) -> [UIBezierPath] {
         guard let skeletonSubviews = skeletonSubviews else {
             return []
         }
@@ -57,7 +57,7 @@ public extension ARCHSkeletonView {
 
 public extension ARCHSkeletonView where Self: UIView {
 
-    public func set(isEnableSkeleton: Bool) {
+    func set(isEnableSkeleton: Bool) {
         skeletonSubviews?.forEach({ view in
             if let view = view as? ARCHSkeletonView {
                 view.set(isEnableSkeleton: isEnableSkeleton)

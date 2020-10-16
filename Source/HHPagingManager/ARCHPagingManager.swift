@@ -10,10 +10,14 @@ import Foundation
 
 open class ARCHPagingManager: NSObject, ARCHPagingManagerInput {
 
+    // IndexPath ячейки, nextOffset - граница срабатывания
+    public typealias TriggerBlock = (IndexPath, Int) -> Bool
+
     private var isLoading = false
     private var isLoadingFromTop = false
     private(set) var reachedEnd = false
     private var currentRequest: ARCHPagingManagerCancellable?
+    private let triggerBlock: TriggerBlock
 
     public let pageSize: Int
     public var offset: Int = 0
@@ -22,17 +26,39 @@ open class ARCHPagingManager: NSObject, ARCHPagingManagerInput {
     public weak var output: ARCHPagingManagerOutput?
 
     public static let defaultPageSize: Int = 40
+    public static let dafaultTriggerBlock: TriggerBlock = { indexPath, nextOffset in
+        indexPath.row >= nextOffset
+    }
 
-    public init(pageSize: Int = ARCHPagingManager.defaultPageSize) {
+    private let debugLog: ((String) -> Void)? = {
+        if let debugMode = ProcessInfo.processInfo.environment["ARCHPagingManagerDebugMode"], Int(debugMode) == 1 {
+            return { print($0) }
+        } else {
+            return nil
+        }
+    }()
+
+    /**
+     @param pageSize - кол-во элементов на странице, по дефолту 40
+     @param trigerBlock - клажура проверяющая можно ли загружать следующую страницу, по дефолту:
+        indexPath.row >= nextOffset
+     Нужно изменить для не одномерных списков, например секционных
+     */
+    public init(
+        pageSize: Int = ARCHPagingManager.defaultPageSize,
+        trigerBlock: @escaping TriggerBlock = ARCHPagingManager.dafaultTriggerBlock
+        ) {
         self.pageSize = pageSize
         self.nextOffset = pageSize / 2
+        self.triggerBlock = trigerBlock
         super.init()
     }
 
     // MARK: - ARCHPagingManagerInput
 
     public func willDisplayCell(indexPath: IndexPath) {
-        if indexPath.row >= nextOffset {
+        debugLog?("[ARCHPagingManager] Will display cell by \(indexPath)")
+        if triggerBlock(indexPath, nextOffset) {
             performLoadNextData()
         }
     }
@@ -42,22 +68,29 @@ open class ARCHPagingManager: NSObject, ARCHPagingManagerInput {
             return
         }
 
-        performRequest(offset: offset)
+        debugLog?("[ARCHPagingManager] performLoadNextData")
+        addQueueRequest(offset: offset)
     }
 
     @objc
     public func performRefreshData() {
-        guard !isLoading && !reachedEnd else {
-            return
-        }
-
-        performRequest(offset: offset)
+        addQueueRequest(offset: 0)
     }
 
     // MARK: Private
 
-    private func performRequest(offset: Int, completion: (() -> Void)? = nil) {
+    private func addQueueRequest(offset: Int) {
+        debugLog?("[ARCHPagingManager] addQueueRequest")
         isLoading = true
+
+        DispatchQueue.main.async { [weak self] in
+            self?.performRequest(offset: offset)
+        }
+    }
+
+    private func performRequest(offset: Int, completion: (() -> Void)? = nil) {
+        debugLog?("[ARCHPagingManager] performRequest by offset \(offset)")
+
         currentRequest?.cancel()
         currentRequest = output?.performRequest(offset: offset, pageSize: pageSize, completion: { [weak self] count, total in
             if let count = count, let total = total {
@@ -66,6 +99,7 @@ open class ARCHPagingManager: NSObject, ARCHPagingManagerInput {
                 self?.reachedEnd = offset + count >= total
             }
 
+            self?.debugLog?("[ARCHPagingManager] end current request reachedEnd \(String(describing: self?.reachedEnd))")
             completion?()
             self?.isLoading = false
         })
