@@ -1,4 +1,4 @@
 github "onmyway133/DeepDiff"
-github "Moya/Moya"
+github "Moya/Moya" ~> 14.0
 github "kishikawakatsumi/KeychainAccess"
 github "gonzalonunez/Skeleton"

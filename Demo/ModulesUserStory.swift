@@ -12,19 +12,19 @@ import HHModule
 // swiftlint:disable identifier_name
 enum ModulesUserStory: ARCHModuleID {
 #if HHModule
-    case main(EmptyModuleIO)
+    case mainModule(EmptyModuleIO)
 #else
-    case main
+    case mainModule
 #endif
 // swiftlint:enable identifier_name
 
     var configurator: ARCHModuleConfigurator {
         switch self {
 #if HHModule
-        case let .main(moduleIO):
+        case let .mainModule(moduleIO):
             return EmptyModuleConfigurator(moduleIO: moduleIO)
 #else
-        case .main:
+        case .mainModule:
 #if HHList
             return ListConfigurator(moduleIO: nil)
 #elseif HHSectionList
