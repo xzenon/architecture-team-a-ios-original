@@ -6,7 +6,7 @@
 import Foundation
 import Moya
 
-public protocol ARCHSignMoyaPluginDelegate: class {
+public protocol ARCHSignMoyaPluginDelegate: AnyObject {
     var signHeaderFields: [String: String] { get }
 }
 
