@@ -321,6 +321,8 @@
 		8163D5372735D3D1005BA8A7 /* Moya.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8163D5362735D3D1005BA8A7 /* Moya.xcframework */; };
 		8163D5392735D3DE005BA8A7 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8163D5382735D3DE005BA8A7 /* Alamofire.xcframework */; };
 		8163D53B2735D3F2005BA8A7 /* KeychainAccess.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8163D53A2735D3F2005BA8A7 /* KeychainAccess.xcframework */; };
+		8163D53D2735DBEE005BA8A7 /* DeepDiff.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8163D53C2735DBEE005BA8A7 /* DeepDiff.xcframework */; };
+		8163D53E2735DBEE005BA8A7 /* DeepDiff.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8163D53C2735DBEE005BA8A7 /* DeepDiff.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		81E49D602367446800ECF461 /* DemoUserStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E49D5F2367446800ECF461 /* DemoUserStory.swift */; };
 		81E49D6B2367474100ECF461 /* DemoModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E49D652367474100ECF461 /* DemoModuleIO.swift */; };
 		81E49D6C2367474100ECF461 /* DemoEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E49D662367474100ECF461 /* DemoEventHandler.swift */; };
@@ -771,6 +773,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8163D53F2735DBEE005BA8A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8163D53E2735DBEE005BA8A7 /* DeepDiff.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -969,6 +982,7 @@
 		8163D5362735D3D1005BA8A7 /* Moya.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Moya.xcframework; path = Carthage/Build/Moya.xcframework; sourceTree = "<group>"; };
 		8163D5382735D3DE005BA8A7 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		8163D53A2735D3F2005BA8A7 /* KeychainAccess.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainAccess.xcframework; path = Carthage/Build/KeychainAccess.xcframework; sourceTree = "<group>"; };
+		8163D53C2735DBEE005BA8A7 /* DeepDiff.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DeepDiff.xcframework; path = Carthage/Build/DeepDiff.xcframework; sourceTree = "<group>"; };
 		81E49D5F2367446800ECF461 /* DemoUserStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUserStory.swift; sourceTree = "<group>"; };
 		81E49D652367474100ECF461 /* DemoModuleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModuleIO.swift; sourceTree = "<group>"; };
 		81E49D662367474100ECF461 /* DemoEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoEventHandler.swift; sourceTree = "<group>"; };
@@ -1026,6 +1040,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8163D53D2735DBEE005BA8A7 /* DeepDiff.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1483,6 +1498,7 @@
 		5089230620FB77520032985E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8163D53C2735DBEE005BA8A7 /* DeepDiff.xcframework */,
 				8163D53A2735D3F2005BA8A7 /* KeychainAccess.xcframework */,
 				8163D5382735D3DE005BA8A7 /* Alamofire.xcframework */,
 				8163D5362735D3D1005BA8A7 /* Moya.xcframework */,
@@ -2024,6 +2040,7 @@
 				501AA644211C6C4A002D3264 /* Frameworks */,
 				501AA645211C6C4A002D3264 /* Headers */,
 				501AA646211C6C4A002D3264 /* Resources */,
+				8163D53F2735DBEE005BA8A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
