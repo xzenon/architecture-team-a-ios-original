@@ -11,5 +11,5 @@ import Foundation
 protocol PaginationModuleInput {
 }
 
-protocol PaginationModuleOutput: class {
+protocol PaginationModuleOutput: AnyObject {
 }

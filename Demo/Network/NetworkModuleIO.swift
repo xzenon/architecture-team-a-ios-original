@@ -11,5 +11,5 @@ import Foundation
 protocol NetworkModuleInput {
 }
 
-protocol NetworkModuleOutput: class {
+protocol NetworkModuleOutput: AnyObject {
 }

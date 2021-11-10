@@ -11,5 +11,5 @@ import Foundation
 protocol ___VARIABLE_HandHModuleName___ModuleInput {
 }
 
-protocol ___VARIABLE_HandHModuleName___ModuleOutput: class {
+protocol ___VARIABLE_HandHModuleName___ModuleOutput: AnyObject {
 }

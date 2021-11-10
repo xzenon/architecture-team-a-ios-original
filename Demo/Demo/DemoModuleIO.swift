@@ -8,7 +8,7 @@
 
 import HHModule
 
-protocol DemoModuleInput: class, ARCHModuleInput {
+protocol DemoModuleInput: AnyObject, ARCHModuleInput {
 }
 
 protocol DemoModuleOutput: ARCHModuleOutput {

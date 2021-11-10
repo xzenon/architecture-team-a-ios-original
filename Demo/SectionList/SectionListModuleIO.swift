@@ -11,5 +11,5 @@ import Foundation
 protocol SectionListModuleInput {
 }
 
-protocol SectionListModuleOutput: class {
+protocol SectionListModuleOutput: AnyObject {
 }

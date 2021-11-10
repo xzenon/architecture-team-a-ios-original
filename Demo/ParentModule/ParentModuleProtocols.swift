@@ -16,7 +16,7 @@ protocol ParentModuleViewOutput: ACRHViewOutput {
 protocol ParentModuleInput {
 }
 
-protocol ParentModuleOutput: class {
+protocol ParentModuleOutput: AnyObject {
 }
 
 protocol ParentModuleStateProtocol: ARCHState {

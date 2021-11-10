@@ -8,7 +8,7 @@
 
 import HHModule
 
-protocol ChildViewProtocol: class {
+protocol ChildViewProtocol: AnyObject {
 
     func childViewNeedsChangeState(_ value: String)
 }
