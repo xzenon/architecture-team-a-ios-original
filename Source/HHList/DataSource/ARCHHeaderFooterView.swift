@@ -20,7 +20,7 @@ public protocol ARCHHeaderFooterView: ARCHHeaderFooterViewAbstract {
     func render(viewModel: ViewModel)
 }
 
-public extension ARCHHeaderFooterView where ViewModel: ARCHHeaderFooterViewModel {
+public extension ARCHHeaderFooterView {
 
     var abstractViewModel: ARCHHeaderFooterViewModel? {
         get {

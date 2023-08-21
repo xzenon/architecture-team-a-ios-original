@@ -9,7 +9,7 @@
 import HHModule
 import UIKit
 
-protocol ParentViewProtocol: class {
+protocol ParentViewProtocol: AnyObject {
 
     func parentViewNeedsChangeState(_ value: String)
 }

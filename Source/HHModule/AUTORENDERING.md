@@ -9,7 +9,7 @@
 У **View**, при помощи Мirror, среди свойств находим дочерние UI компоненты с реализованным протоколом:
 
 ````
-protocol ARCHViewInput: class {
+protocol ARCHViewInput: AnyObject {
     
     func update(state: Any?)
     func set(visible: Bool)

@@ -8,7 +8,7 @@
 
 import Moya
 
-public protocol ARCHAuthObserverMoyaPluginDelegate: class {
+public protocol ARCHAuthObserverMoyaPluginDelegate: AnyObject {
     func didExpiredAuthToken()
 }
 

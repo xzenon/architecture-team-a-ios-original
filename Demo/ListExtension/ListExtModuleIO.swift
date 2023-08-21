@@ -11,5 +11,5 @@ import Foundation
 protocol ListExtModuleInput {
 }
 
-protocol ListExtModuleOutput: class {
+protocol ListExtModuleOutput: AnyObject {
 }

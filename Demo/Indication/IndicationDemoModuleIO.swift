@@ -11,5 +11,5 @@ import Foundation
 protocol IndicationDemoModuleInput {
 }
 
-protocol IndicationDemoModuleOutput: class {
+protocol IndicationDemoModuleOutput: AnyObject {
 }

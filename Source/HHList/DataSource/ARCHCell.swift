@@ -20,7 +20,7 @@ public protocol ARCHCell: ARCHCellAbstract {
     func render(viewModel: ViewModel)
 }
 
-public extension ARCHCell where ViewModel: ARCHCellViewModel {
+public extension ARCHCell {
 
     var abstractViewModel: ARCHCellViewModel? {
         get {
